@@ -1,0 +1,35 @@
+{
+  "colors": {
+    "brand": {
+      "primary": "#7A2531",
+      "secondary": "#0F172A"
+    },
+    "text": {
+      "default": "#111827",
+      "muted": "#6B7280",
+      "inverse": "#FFFFFF"
+    },
+    "surface": {
+      "page": "#F8FAFC",
+      "card": "#FFFFFF",
+      "muted": "#F1F5F9"
+    },
+    "border": {
+      "default": "#E5E7EB",
+      "strong": "#CBD5E1"
+    },
+    "status": {
+      "success": "#16A34A",
+      "warning": "#F59E0B",
+      "danger": "#DC2626",
+      "info": "#2563EB"
+    },
+    "hierarchy": {
+      "easicloud": "#7A2531",
+      "company": "#0998B5",
+      "building": "#7BB02A",
+      "floor": "#CE6F2F",
+      "zone": "#A75FC8"
+    }
+  }
+}
