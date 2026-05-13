@@ -9,6 +9,13 @@
  * widens to `string` in some TypeScript setups due to JSON-inference
  * quirks with import attributes + verbatimModuleSyntax).
  *
+ * ────────────────────────────────────────────────────────────────────
+ * RULE: keys of ICON_MAP MUST equal keys of tokens/icons.json.
+ * Web reads ICON_MAP; mobile reads icons.json. Drift means one
+ * platform missing the icon. Enforced by `npm run check:sync` (CI).
+ * See README "Adding an icon" for the full flow.
+ * ────────────────────────────────────────────────────────────────────
+ *
  * Consumers:
  *   import { AppIcon } from "@easicloudaiot/design-tokens/react";
  *   <AppIcon name="asset" />   // "asdad" → compile error
