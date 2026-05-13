@@ -110,6 +110,7 @@
     "minimize": "minimize",
     "zoomIn": "zoomIn",
     "zoomOut": "zoomOut",
-    "loader": "loader"
+    "loader": "loader",
+    "test": "test"
   }
 }
