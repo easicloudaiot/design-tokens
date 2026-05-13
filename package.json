@@ -11,6 +11,10 @@
       "types": "./src/index.ts",
       "import": "./src/index.ts"
     },
+    "./react": {
+      "types": "./src/react.tsx",
+      "import": "./src/react.tsx"
+    },
     "./icons.json": "./tokens/icons.json",
     "./colors.json": "./tokens/colors.json"
   },
@@ -22,8 +26,23 @@
     "lint": "eslint .",
     "typecheck": "tsc --noEmit"
   },
+  "peerDependencies": {
+    "lucide-react": "^0.525.0",
+    "react": "^19.0.0"
+  },
+  "peerDependenciesMeta": {
+    "lucide-react": { "optional": true },
+    "react": { "optional": true }
+  },
   "devDependencies": {
+    "@types/react": "^19.1.8",
+    "lucide-react": "^0.525.0",
+    "react": "^19.1.0",
     "typescript": "~5.8.3"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
+    "access": "restricted"
   },
   "repository": {
     "type": "git",
