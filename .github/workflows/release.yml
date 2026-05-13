@@ -1,18 +1,25 @@
-name: Publish
+name: Release
 
 on:
   push:
-    tags: ['v*']
+    branches: [main]
   workflow_dispatch:
 
 jobs:
-  publish:
+  release:
     runs-on: ubuntu-latest
     permissions:
-      contents: read
+      contents: write
       packages: write
+      issues: write
+      pull-requests: write
+    outputs:
+      new_release_published: ${{ steps.semantic.outputs.new_release_published }}
+      new_release_version: ${{ steps.semantic.outputs.new_release_version }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - uses: actions/setup-node@v4
         with:
@@ -20,7 +27,50 @@ jobs:
           registry-url: 'https://npm.pkg.github.com'
           scope: '@easicloudaiot'
 
-      - name: Publish to GitHub Packages
-        run: npm publish
+      - run: npm install
+
+      - run: npm run build
+
+      - name: Semantic Release
+        id: semantic
+        uses: cycjimmy/semantic-release-action@v4
         env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  dispatch:
+    needs: release
+    if: needs.release.outputs.new_release_published == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/create-github-app-token@v1
+        id: app-token
+        with:
+          app-id: ${{ secrets.BOT_APP_ID }}
+          private-key: ${{ secrets.BOT_PRIVATE_KEY }}
+          owner: easicloudaiot
+          repositories: |
+            EASIAioT-FE
+            EASIAIoT-Mobile
+
+      - name: Notify EASIAioT-FE
+        env:
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
+          VERSION: ${{ needs.release.outputs.new_release_version }}
+          SHA: ${{ github.sha }}
+        run: |
+          gh api repos/easicloudaiot/EASIAioT-FE/dispatches \
+            -f event_type=design-tokens-updated \
+            -F "client_payload[version]=$VERSION" \
+            -F "client_payload[sha]=$SHA"
+
+      - name: Notify EASIAIoT-Mobile
+        env:
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
+          VERSION: ${{ needs.release.outputs.new_release_version }}
+          SHA: ${{ github.sha }}
+        run: |
+          gh api repos/easicloudaiot/EASIAIoT-Mobile/dispatches \
+            -f event_type=design-tokens-updated \
+            -F "client_payload[version]=$VERSION" \
+            -F "client_payload[sha]=$SHA"
