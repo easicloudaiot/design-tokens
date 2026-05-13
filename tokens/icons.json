@@ -111,6 +111,7 @@
     "zoomIn": "zoomIn",
     "zoomOut": "zoomOut",
     "loader": "loader",
-    "test": "test"
+    "test": "test",
+    "beaker": "beaker"
   }
 }

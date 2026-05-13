@@ -33,6 +33,7 @@ import {
   ArrowLeft,
   ArrowUpDown,
   ArrowUpRight,
+  Beaker,
   Bell,
   Bug,
   Building2,
@@ -276,6 +277,7 @@ export const ICON_MAP = {
   zoomOut: ZoomOut,
   loader: Loader2,
   test: FlaskConical,
+  beaker: Beaker,
 } as const satisfies Record<string, LucideIcon>;
 
 /** Canonical icon name type. Narrow union, reliable type-narrowing. */
