@@ -60,6 +60,7 @@ import {
   Factory,
   FileText,
   Filter,
+  FlaskConical,
   FolderOpen,
   Globe,
   Grid3x3,
@@ -274,6 +275,7 @@ export const ICON_MAP = {
   zoomIn: ZoomIn,
   zoomOut: ZoomOut,
   loader: Loader2,
+  test: FlaskConical,
 } as const satisfies Record<string, LucideIcon>;
 
 /** Canonical icon name type. Narrow union, reliable type-narrowing. */
