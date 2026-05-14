@@ -2,17 +2,26 @@
   "colors": {
     "brand": {
       "primary": "#7A2531",
-      "secondary": "#0F172A"
+      "primaryHover": "#6B1F2A",
+      "primaryText": "#FFFFFF",
+      "secondary": "#0F172A",
+      "secondaryHover": "#D9D9DB",
+      "secondaryText": "#374151"
     },
     "text": {
       "default": "#111827",
+      "secondary": "#4B5563",
       "muted": "#6B7280",
+      "disabled": "#9CA3AF",
       "inverse": "#FFFFFF"
     },
     "surface": {
       "page": "#F8FAFC",
       "card": "#FFFFFF",
-      "muted": "#F1F5F9"
+      "muted": "#F1F5F9",
+      "input": "#FFFFFF",
+      "hover": "#F9FAFB",
+      "active": "#F3F4F6"
     },
     "border": {
       "default": "#E5E7EB",
@@ -22,6 +31,7 @@
       "success": "#16A34A",
       "warning": "#F59E0B",
       "danger": "#DC2626",
+      "error": "#EF4444",
       "info": "#2563EB"
     },
     "hierarchy": {
@@ -30,6 +40,33 @@
       "building": "#7BB02A",
       "floor": "#CE6F2F",
       "zone": "#A75FC8"
+    },
+    "badge": {
+      "primary": "#F7E8EB",
+      "success": "#DAEFE0",
+      "successText": "#0E5237",
+      "warning": "#F0E7CE",
+      "warningText": "#5A3F12",
+      "error": "#F1DDD7",
+      "errorText": "#6E2820",
+      "info": "#DAE0EE",
+      "infoText": "#1F2C5C",
+      "disabled": "#F3F4F6",
+      "disabledText": "#9CA3AF"
+    },
+    "button": {
+      "tertiaryHover": "#F3F4F6",
+      "tertiaryText": "#374151",
+      "danger": "#DC2626",
+      "dangerHover": "#B91C1C"
+    },
+    "nav": {
+      "background": "#1F1F1F",
+      "text": "#E5E7EB",
+      "accent": "#FF6B35",
+      "hoverBackground": "#2B2B2B",
+      "activeBackground": "#333333",
+      "border": "#3D3D3D"
     }
   }
 }
