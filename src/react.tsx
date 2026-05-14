@@ -26,6 +26,8 @@ import {
   type CSSProperties,
   type SVGProps,
 } from "react";
+import iconsJson from "../tokens/icons.json" with { type: "json" };
+import colorsJson from "../tokens/colors.json" with { type: "json" };
 import {
   Activity,
   AlertCircle,
@@ -286,6 +288,27 @@ export type IconName = keyof typeof ICON_MAP;
 /** Fallback rendered when an unknown name slips through at runtime. */
 const FALLBACK_ICON: LucideIcon = HelpCircle;
 
+/**
+ * Resolve a dotted color-token path (e.g. `"hierarchy.building"`) against
+ * `tokens/colors.json`. Returns undefined if the path doesn't resolve to
+ * a string leaf. Kept inline (no separate util) so the renderer is
+ * self-contained.
+ */
+function resolveColorToken(path: string): string | undefined {
+  const parts = path.split(".");
+  let cursor: unknown = colorsJson.colors;
+  for (const p of parts) {
+    if (typeof cursor !== "object" || cursor === null) return undefined;
+    cursor = (cursor as Record<string, unknown>)[p];
+  }
+  return typeof cursor === "string" ? cursor : undefined;
+}
+
+const ICON_SPECS = iconsJson.icons as Record<
+  string,
+  { lucide: string; color?: string }
+>;
+
 export interface AppIconProps extends Omit<SVGProps<SVGSVGElement>, "name"> {
   /** Semantic name from the design-tokens registry. */
   name: IconName;
@@ -310,6 +333,7 @@ export const AppIcon = forwardRef<SVGSVGElement, AppIconProps>(function AppIcon(
     strokeWidth = 2,
     className,
     decorative,
+    color,
     "aria-label": ariaLabel,
     ...rest
   },
@@ -317,6 +341,9 @@ export const AppIcon = forwardRef<SVGSVGElement, AppIconProps>(function AppIcon(
 ) {
   const Icon = ICON_MAP[name] ?? FALLBACK_ICON;
   const isDecorative = decorative ?? !ariaLabel;
+  const tokenColor = ICON_SPECS[name]?.color;
+  const resolvedColor =
+    color ?? (tokenColor ? resolveColorToken(tokenColor) : undefined);
 
   return (
     <Icon
@@ -325,6 +352,7 @@ export const AppIcon = forwardRef<SVGSVGElement, AppIconProps>(function AppIcon(
       height={size}
       strokeWidth={strokeWidth}
       className={className}
+      color={resolvedColor}
       aria-hidden={isDecorative ? true : undefined}
       aria-label={isDecorative ? undefined : ariaLabel}
       role={isDecorative ? undefined : "img"}

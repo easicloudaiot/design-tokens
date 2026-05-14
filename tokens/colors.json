@@ -1,45 +1,33 @@
 {
   "colors": {
-    "brand": {
-      "primary": "#7A2531",
-      "primaryHover": "#6B1F2A",
-      "primaryText": "#FFFFFF",
-      "secondary": "#0F172A",
-      "secondaryHover": "#D9D9DB",
-      "secondaryText": "#374151"
+    "status": {
+      "success": "#10B981",
+      "warning": "#F59E0B",
+      "error": "#EF4444",
+      "info": "#3B82F6"
     },
-    "text": {
-      "default": "#111827",
-      "secondary": "#4B5563",
-      "muted": "#6B7280",
-      "disabled": "#9CA3AF",
-      "inverse": "#FFFFFF"
+    "danger": {
+      "base": "#DC2626",
+      "hover": "#B91C1C"
     },
-    "surface": {
-      "page": "#F8FAFC",
+    "background": {
+      "page": "#F5F5F5",
       "card": "#FFFFFF",
-      "muted": "#F1F5F9",
       "input": "#FFFFFF",
+      "border": "#E5E7EB",
       "hover": "#F9FAFB",
       "active": "#F3F4F6"
     },
-    "border": {
-      "default": "#E5E7EB",
-      "strong": "#CBD5E1"
+    "text": {
+      "primary": "#111827",
+      "secondary": "#4B5563",
+      "muted": "#6B7280",
+      "disabled": "#9CA3AF"
     },
-    "status": {
-      "success": "#16A34A",
-      "warning": "#F59E0B",
-      "danger": "#DC2626",
-      "error": "#EF4444",
-      "info": "#2563EB"
-    },
-    "hierarchy": {
-      "easicloud": "#7A2531",
-      "company": "#0998B5",
-      "building": "#7BB02A",
-      "floor": "#CE6F2F",
-      "zone": "#A75FC8"
+    "tertiary": {
+      "base": "transparent",
+      "hover": "#F3F4F6",
+      "text": "#374151"
     },
     "badge": {
       "primary": "#F7E8EB",
@@ -54,19 +42,26 @@
       "disabled": "#F3F4F6",
       "disabledText": "#9CA3AF"
     },
-    "button": {
-      "tertiaryHover": "#F3F4F6",
-      "tertiaryText": "#374151",
-      "danger": "#DC2626",
-      "dangerHover": "#B91C1C"
+    "whitelabel": {
+      "primary": "#7A2531",
+      "primaryHover": "#6B1F2A",
+      "primaryText": "#FFFFFF",
+      "secondary": "#E8E8EA",
+      "secondaryHover": "#D9D9DB",
+      "secondaryText": "#374151",
+      "navBackground": "#1F1F1F",
+      "navText": "#E5E7EB",
+      "navAccent": "#FF6B35",
+      "navHoverBackground": "#2B2B2B",
+      "navActiveBackground": "#333333",
+      "navBorder": "#3D3D3D"
     },
-    "nav": {
-      "background": "#1F1F1F",
-      "text": "#E5E7EB",
-      "accent": "#FF6B35",
-      "hoverBackground": "#2B2B2B",
-      "activeBackground": "#333333",
-      "border": "#3D3D3D"
+    "hierarchy": {
+      "easicloud": "#7A2531",
+      "company": "#0998B5",
+      "building": "#7BB02A",
+      "floor": "#CE6F2F",
+      "zone": "#A75FC8"
     }
   }
 }
