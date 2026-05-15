@@ -16,11 +16,13 @@
       "import": "./src/react.tsx"
     },
     "./icons.json": "./tokens/icons.json",
-    "./colors.json": "./tokens/colors.json"
+    "./colors.json": "./tokens/colors.json",
+    "./brand/logo.png": "./brand/EASICloud_Logo.png"
   },
   "files": [
     "src",
-    "tokens"
+    "tokens",
+    "brand"
   ],
   "scripts": {
     "lint": "eslint .",
