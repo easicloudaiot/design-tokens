@@ -102,6 +102,7 @@ import {
   Plus,
   Radio,
   RadioTower,
+  Receipt,
   RefreshCw,
   Repeat,
   Rocket,
@@ -248,6 +249,7 @@ export const ICON_MAP = {
   palette: Palette,
   image: Image,
   document: FileText,
+  billing: Receipt,
   folderOpen: FolderOpen,
   link: Link,
   // Comms

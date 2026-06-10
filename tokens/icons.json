@@ -98,6 +98,7 @@
     "palette":           { "lucide": "palette" },
     "image":             { "lucide": "image" },
     "document":          { "lucide": "fileText" },
+    "billing":           { "lucide": "receipt" },
     "folderOpen":        { "lucide": "folderOpen" },
     "link":              { "lucide": "link" },
 
