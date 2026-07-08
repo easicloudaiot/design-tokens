@@ -43,10 +43,8 @@
       "disabledText": "#9CA3AF"
     },
     "impersonation": {
-      "accent": "#A6348A",
-      "accentPressed": "#8E2B74",
-      "tint": "#F3DCEC",
-      "tintText": "#5E2150"
+      "surface": "#262626",
+      "surfaceText": "#E5E7EB"
     },
     "whitelabel": {
       "primary": "#7A2531",
