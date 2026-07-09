@@ -42,10 +42,6 @@
       "disabled": "#F3F4F6",
       "disabledText": "#9CA3AF"
     },
-    "impersonation": {
-      "surface": "#262626",
-      "surfaceText": "#E5E7EB"
-    },
     "whitelabel": {
       "primary": "#7A2531",
       "primaryHover": "#6B1F2A",
