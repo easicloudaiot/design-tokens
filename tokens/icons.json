@@ -47,6 +47,7 @@
     "info":              { "lucide": "info",          "color": "status.info" },
     "success":           { "lucide": "circleCheck",   "color": "status.success" },
     "bug":               { "lucide": "bug" },
+    "help":              { "lucide": "circleQuestionMark" },
 
     "chevronDown":       { "lucide": "chevronDown" },
     "chevronUp":         { "lucide": "chevronUp" },

@@ -198,6 +198,7 @@ export const ICON_MAP = {
   info: Info,
   success: CheckCircle2,
   bug: Bug,
+  help: HelpCircle,
   // Chevrons / arrows
   chevronDown: ChevronDown,
   chevronUp: ChevronUp,
