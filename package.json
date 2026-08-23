@@ -17,7 +17,7 @@
     },
     "./icons.json": "./tokens/icons.json",
     "./colors.json": "./tokens/colors.json",
-    "./brand/logo.png": "./brand/EASICloud_Logo.png"
+    "./brand/logo.png": "./brand/Traceium_Logo.png"
   },
   "files": [
     "src",
