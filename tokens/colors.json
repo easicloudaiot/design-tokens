@@ -43,18 +43,18 @@
       "disabledText": "#9CA3AF"
     },
     "whitelabel": {
-      "primary": "#7A2531",
-      "primaryHover": "#6B1F2A",
+      "primary": "#3E4C5C",
+      "primaryHover": "#313D4A",
       "primaryText": "#FFFFFF",
-      "secondary": "#E8E8EA",
-      "secondaryHover": "#D9D9DB",
-      "secondaryText": "#374151",
-      "navBackground": "#1F1F1F",
-      "navText": "#E5E7EB",
-      "navAccent": "#FF6B35",
-      "navHoverBackground": "#2B2B2B",
-      "navActiveBackground": "#333333",
-      "navBorder": "#3D3D3D"
+      "secondary": "#E4E8ED",
+      "secondaryHover": "#D4DAE2",
+      "secondaryText": "#2C3644",
+      "navBackground": "#1C2229",
+      "navText": "#F1F4F8",
+      "navAccent": "#8AA4C0",
+      "navHoverBackground": "#313B47",
+      "navActiveBackground": "#5C6D83",
+      "navBorder": "#3D4854"
     },
     "hierarchy": {
       "easicloud": "#7A2531",
