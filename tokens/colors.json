@@ -4,7 +4,8 @@
       "success": "#10B981",
       "warning": "#F59E0B",
       "error": "#EF4444",
-      "info": "#3B82F6"
+      "info": "#3B82F6",
+      "pending": "#8B5CF6"
     },
     "danger": {
       "base": "#DC2626",
@@ -31,16 +32,18 @@
     },
     "badge": {
       "primary": "#F7E8EB",
-      "success": "#DAEFE0",
-      "successText": "#0E5237",
-      "warning": "#F0E7CE",
-      "warningText": "#5A3F12",
-      "error": "#F1DDD7",
-      "errorText": "#6E2820",
-      "info": "#DAE0EE",
-      "infoText": "#1F2C5C",
+      "success": "#D1FAE5",
+      "successText": "#065F46",
+      "warning": "#FEF3C7",
+      "warningText": "#92400E",
+      "error": "#FEE2E2",
+      "errorText": "#991B1B",
+      "info": "#DBEAFE",
+      "infoText": "#1E40AF",
       "disabled": "#F3F4F6",
-      "disabledText": "#9CA3AF"
+      "disabledText": "#374151",
+      "pending": "#EDE9FE",
+      "pendingText": "#5B21B6"
     },
     "whitelabel": {
       "primary": "#3E4C5C",
