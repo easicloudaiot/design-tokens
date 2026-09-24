@@ -82,6 +82,7 @@
     "activity":          { "lucide": "activity" },
     "signal":            { "lucide": "signal" },
     "history":           { "lucide": "history" },
+    "activityLog":       { "lucide": "scrollText" },
     "trendingUp":        { "lucide": "trendingUp" },
     "trendingDown":      { "lucide": "trendingDown" },
 

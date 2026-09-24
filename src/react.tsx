@@ -109,6 +109,7 @@ import {
   RotateCcw,
   Ruler,
   Save,
+  ScrollText,
   Search,
   Send,
   Settings,
@@ -233,6 +234,7 @@ export const ICON_MAP = {
   activity: Activity,
   signal: Signal,
   history: History,
+  activityLog: ScrollText,
   trendingUp: TrendingUp,
   trendingDown: TrendingDown,
   // Layout
