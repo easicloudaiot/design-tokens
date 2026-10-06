@@ -74,6 +74,8 @@
     "refresh":           { "lucide": "refreshCw" },
     "undo":              { "lucide": "rotateCcw" },
     "repeat":            { "lucide": "repeat" },
+    "play":              { "lucide": "play" },
+    "pause":             { "lucide": "pause" },
     "save":              { "lucide": "save" },
     "send":              { "lucide": "send" },
     "eye":               { "lucide": "eye" },
