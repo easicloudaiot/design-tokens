@@ -6,6 +6,7 @@
     "user":              { "lucide": "user" },
     "users":             { "lucide": "users" },
     "userCheck":         { "lucide": "userCheck" },
+    "deleteAccount":     { "lucide": "userX" },
     "profile":           { "lucide": "circleUser" },
     "notification":      { "lucide": "bell" },
 

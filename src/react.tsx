@@ -136,6 +136,7 @@ import {
   User,
   UserCheck,
   UserCircle,
+  UserX,
   Users,
   Wifi,
   WifiOff,
@@ -160,6 +161,7 @@ export const ICON_MAP = {
   user: User,
   users: Users,
   userCheck: UserCheck,
+  deleteAccount: UserX,
   profile: UserCircle,
   notification: Bell,
   // Hierarchy
