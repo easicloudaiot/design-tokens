@@ -86,6 +86,7 @@ import {
   Mail,
   Map,
   MapPin,
+  MapPinHouse,
   MapPinned,
   Maximize2,
   Menu,
@@ -182,6 +183,8 @@ export const ICON_MAP = {
   target: Target,
   crosshair: Crosshair,
   location: MapPin,
+  // The hierarchy of places as a whole (Admin › Locations), not one pin.
+  locations: MapPinHouse,
   mapPinned: MapPinned,
   map: Map,
   globe: Globe,

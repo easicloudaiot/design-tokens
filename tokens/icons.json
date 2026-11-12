@@ -25,6 +25,7 @@
     "target":            { "lucide": "target" },
     "crosshair":         { "lucide": "crosshair" },
     "location":          { "lucide": "mapPin" },
+    "locations":         { "lucide": "mapPinHouse" },
     "mapPinned":         { "lucide": "mapPinned" },
     "map":               { "lucide": "map" },
     "globe":             { "lucide": "globe" },
