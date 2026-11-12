@@ -97,6 +97,8 @@
     "grip":              { "lucide": "gripVertical" },
 
     "tag":               { "lucide": "tag" },
+    "assetTypes":        { "lucide": "shapes" },
+    "propertyDefinitions": { "lucide": "textCursorInput" },
     "star":              { "lucide": "star" },
     "sparkles":          { "lucide": "sparkles" },
     "rocket":            { "lucide": "rocket" },

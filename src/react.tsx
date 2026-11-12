@@ -115,6 +115,7 @@ import {
   Search,
   Send,
   Settings,
+  Shapes,
   Shield,
   ShieldCheck,
   ShieldX,
@@ -127,6 +128,7 @@ import {
   Store,
   Table,
   Tag,
+  TextCursorInput,
   Target,
   Trash2,
   TrendingDown,
@@ -253,6 +255,10 @@ export const ICON_MAP = {
   grip: GripVertical,
   // Decorative / classification
   tag: Tag,
+  // Admin › Asset types and Admin › Property definitions: a kind of thing,
+  // and a typed field. Each Admin page has an icon of its own.
+  assetTypes: Shapes,
+  propertyDefinitions: TextCursorInput,
   star: Star,
   sparkles: Sparkles,
   rocket: Rocket,
